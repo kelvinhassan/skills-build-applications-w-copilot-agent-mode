@@ -1,3 +1,21 @@
+import os
+from django.urls import path, include
+from . import views
+
+# Get codespace name from environment variable
+CODESPACE_NAME = os.environ.get('CODESPACE_NAME', '')
+BASE_URL = f"https://{CODESPACE_NAME}-8000.app.github.dev" if CODESPACE_NAME else "http://localhost:8000"
+
+def api_url(component):
+    return f"api/{component}/"
+
+urlpatterns = [
+    # path(api_url('activities'), views.activities_api, name='activities_api'),  # Removed due to missing attribute
+    # path(api_url('users'), views.users_api, name='users_api'),
+    # path(api_url('teams'), views.teams_api, name='teams_api'),
+    # path(api_url('leaderboard'), views.leaderboard_api, name='leaderboard_api'),
+    # path(api_url('workouts'), views.workouts_api, name='workouts_api'),
+]
 """octofit_tracker URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
