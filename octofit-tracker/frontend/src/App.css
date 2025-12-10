@@ -1,0 +1,109 @@
+
+.App {
+  text-align: center;
+  background: linear-gradient(135deg, #e3f2fd 0%, #fce4ec 100%);
+  min-height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.App-header {
+  background-color: #1976d2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff;
+}
+
+
+.App-link {
+  color: #ff4081;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Custom table styles */
+table.table {
+  background-color: #fff3e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.08);
+}
+thead.table-dark {
+  background-color: #1976d2 !important;
+  color: #fff;
+}
+tbody tr:nth-child(even) {
+  background-color: #e3f2fd;
+}
+
+/* Custom button styles */
+.btn {
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(33, 150, 243, 0.08);
+}
+.btn-success {
+  background-color: #43a047;
+  border-color: #43a047;
+}
+.btn-info {
+  background-color: #0288d1;
+  border-color: #0288d1;
+}
+.btn-warning {
+  background-color: #ffa000;
+  border-color: #ffa000;
+}
+.btn-secondary {
+  background-color: #7b1fa2;
+  border-color: #7b1fa2;
+}
+.btn-primary {
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+/* Custom heading styles */
+h1, h2, h3, h4, h5 {
+  color: #1976d2;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  font-weight: 700;
+}
+
+/* Custom navigation styles */
+.navbar {
+  background: linear-gradient(90deg, #1976d2 60%, #ff4081 100%) !important;
+  box-shadow: 0 2px 8px rgba(33, 150, 243, 0.12);
+}
+.navbar-brand, .navbar-nav .nav-link {
+  color: #fff !important;
+}
+.navbar-brand span {
+  color: #fff;
+  font-size: 1.5rem;
+}
+.navbar-brand img {
+  filter: drop-shadow(0 2px 4px rgba(33, 150, 243, 0.18));
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
